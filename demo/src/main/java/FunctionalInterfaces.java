@@ -32,6 +32,7 @@ public class FunctionalInterfaces {
 
     Optional<Integer> x = Optional.of(100);
     x.ifPresent((Consumer<? super Integer>) consumer.andThen(System.out::println));
+
     //writes it twice
     if (x.isPresent()) {
       consumer.andThen(System.out::println);
@@ -39,8 +40,6 @@ public class FunctionalInterfaces {
 
     System.out.println(x.filter(i -> i > 3));
 
-    Predicate<?> isValid = c -> (c!=null) && (c.equals(5) || c.equals(5L) || c.equals(Integer.toString(5)));
-
-
+    Predicate<?> isValid = c -> (c != null) && (c.equals(5) || c.equals(5L) || c.equals(Integer.toString(5)));
   }
 }

@@ -12,10 +12,9 @@ public class GenericImplementations {
     Collection<Long> x = new ArrayList<>();
     customCollector2.setT(Arrays.asList(1, 3, 4));
     System.out.println(customCollector2.getT());
-
     //raw type
 
-    CustomCollector customCollector3 = new CustomCollector<String>();
+    CustomCollector<String> customCollector3 = new CustomCollector<>();
     customCollector3.setT("This is a custom string");
     System.out.println(customCollector3.getT());
     //raw type
