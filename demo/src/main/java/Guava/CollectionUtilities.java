@@ -1,11 +1,9 @@
 package Guava;
 
 import com.google.common.collect.ImmutableList;
-import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Iterables;
 import javafx.collections.FXCollections;
 import javafx.collections.transformation.SortedList;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -34,7 +32,6 @@ public class CollectionUtilities {
     System.out.println(immutableList.subList(0, 5));
     //immutableList.asList().add(1); --> throws UnsupportedOperationException
     //ImmutableList list2 = ImmutableList.toImmutableList(list); marked as unstable
-
 
     SortedList<Integer> sortedList = new SortedList<>(FXCollections.observableArrayList(Arrays.asList(11, 31, 0, 2)));
     System.out.println(sortedList);
