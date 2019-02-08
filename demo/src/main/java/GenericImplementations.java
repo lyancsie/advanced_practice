@@ -1,5 +1,3 @@
-import java.lang.reflect.Array;
-import java.net.Inet4Address;
 import java.util.*;
 
 public class GenericImplementations {
@@ -14,12 +12,13 @@ public class GenericImplementations {
     Collection<Long> x = new ArrayList<>();
     customCollector2.setT(Arrays.asList(1, 3, 4));
     System.out.println(customCollector2.getT());
+
     //raw type
 
     CustomCollector customCollector3 = new CustomCollector<String>();
     customCollector3.setT("This is a custom string");
     System.out.println(customCollector3.getT());
-    //ray type
+    //raw type
 
     CustomCollector<HashMap<Integer, Kingdom>> customCollector4 = new CustomCollector<>();
     HashMap<Integer, Kingdom> hashMap = new HashMap<>();
