@@ -2,7 +2,7 @@
 - Optionals
 - Generic methods
     - Creating custom collectors
-    - Some random representations
+    - Some random representations + filtering and aggregate functions (SUM, MIN, MAX)
     - TODO: create a generic class, which takes e.g. 2 ArrayLists, and returns a third one, which is:
          
          a)  has as many elements as the bigger one and each element is the SUM of the corresponding two elements<br>
