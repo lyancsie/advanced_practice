@@ -8,6 +8,7 @@ import java.util.List;
 public class CustomCollectorRepresentation {
 
   private static CustomCollector<List<Integer>, Integer> customCollector = new CustomCollector<List<Integer>, Integer>();
+
   private static CustomCollector<List<String>, HashMap<Integer, String>> customCollector2 =
           new CustomCollector<List<String>, HashMap<Integer, String>>();
 
@@ -20,7 +21,7 @@ public class CustomCollectorRepresentation {
             customCollector
                     .getT()
                     .stream()
-                    .reduce(0, (a1, a2) -> a1 > a2 ? a1 : a2)
+                    .reduce(0, (a1, a2) -> a1 > a2 ? a1 : a2) //if I don't set identity, I can make it optional!
     );
 
     System.out.println(
@@ -41,7 +42,7 @@ public class CustomCollectorRepresentation {
                     .getT()
                     .stream()
                     .filter(i -> i < 20)
-                    .reduce((a1, a2) -> a1 * a2).orElse(1)
+                    .reduce((a1, a2) -> a1 * a2).orElse(1) //Optional, because no identity set in reduce
     );
 
     System.out.println(

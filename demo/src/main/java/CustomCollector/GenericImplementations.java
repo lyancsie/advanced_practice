@@ -1,7 +1,5 @@
 package CustomCollector;
 
-import CustomCollector.CustomCollector;
-import com.example.*;
 import com.example.demo.Building;
 import com.example.demo.Kingdom;
 import com.example.demo.Resource;

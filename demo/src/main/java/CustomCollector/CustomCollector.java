@@ -9,7 +9,4 @@ public class CustomCollector<T, U> {
 
   private T t;
   private U u;
-
 }
-
-
