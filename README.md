@@ -1,7 +1,12 @@
 # advanced_practice
 - Optionals
 - Generics methods
-- Method reference
-- Lambdas
-
+- Functional interfaces:
+    
+    - Lambda
+    - Method reference
+    - Predicate
+    - Supplier
+    - Consumer
+   
 ...to be continued
