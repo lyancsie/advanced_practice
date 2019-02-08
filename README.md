@@ -1,6 +1,6 @@
 # advanced_practice
 - Optionals
-- Generics methods
+- Generic methods
 - Functional interfaces:
     
     - Lambda
