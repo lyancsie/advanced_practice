@@ -23,6 +23,13 @@ public class CustomCollectorRepresentation {
             customCollector
                     .getT()
                     .stream()
+                    .reduce(Math::max)
+    );
+
+    System.out.println(
+            customCollector
+                    .getT()
+                    .stream()
                     .reduce(0, (a1, a2) -> a1 + a2));
 
     System.out.println(
@@ -30,23 +37,23 @@ public class CustomCollectorRepresentation {
                     .getT()
                     .stream()
                     .filter(i -> i < 20)
-                    .reduce(1, (a1, a2) -> a1 * a2)
+                    .reduce((a1, a2) -> a1 * a2).orElse(1)
     );
 
     System.out.println(
             customCollector
                     .getT()
                     .stream()
-                    .max(Comparator.comparing(i -> i))
-                    .orElseGet(()->customCollector.getT().get(0))
+                    .max(Comparator.naturalOrder())
+                    .orElseThrow(RuntimeException::new)
     );
 
     System.out.println(
             customCollector
-            .getT()
-            .stream()
-            .min(Comparator.comparing(i->i))
-            .orElseGet(()->customCollector.getT().get(0))
+                    .getT()
+                    .stream()
+                    .min(Comparator.naturalOrder())
+                    .orElseThrow(RuntimeException::new)
     );
   }
 }
