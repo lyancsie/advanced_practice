@@ -1,6 +1,6 @@
 public class CustomCollector<T> {
 
-  private T t ;
+  private T t;
 
   public T getT() {
     return t;
@@ -9,7 +9,6 @@ public class CustomCollector<T> {
   public void setT(T t) {
     this.t = t;
   }
-
 }
 
 
