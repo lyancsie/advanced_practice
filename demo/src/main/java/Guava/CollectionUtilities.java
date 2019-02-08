@@ -30,17 +30,27 @@ public class CollectionUtilities {
     //Integer oneElementThrowsException = Iterables.getOnlyElement(concat, 0);
     //breaks, because it's not a Singleton
 
-    //ImmutableList<Integer> immutableList = (ImmutableList<Integer>) Arrays.asList(1, 3, 4, 5, 6);
+    ImmutableList<Integer> immutableList = ImmutableList.of(1, 2, 3, 4, 6);
+    System.out.println(immutableList.subList(0, 5));
+    //immutableList.asList().add(1); --> throws UnsupportedOperationException
+
     //can't add elements after
     List<Integer> list = new ArrayList<>(Arrays.asList(1, 4, 5, 6, 10));
     list.add(11);
     //ImmutableList list2 = ImmutableList.toImmutableList(list); marked as unstable
+
 
     SortedList<Integer> sortedList = new SortedList<>(FXCollections.observableArrayList(Arrays.asList(11, 31, 0, 2)));
     System.out.println(sortedList);
     System.out.println(sortedList.sorted());
     //the list itself remains the same, so sortedList.sorted() is redundant in itself
 
-
+    /* Other useful utilities:
+     - Maps.difference(Map, Map)
+     - MultiSets
+     - Multimaps
+     - More stuff from Iterables
+     - Sets --> union, intersection, difference, symmetricDifference
+     */
   }
 }
