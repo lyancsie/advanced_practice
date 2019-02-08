@@ -8,5 +8,10 @@
     - Predicate
     - Supplier
     - Consumer
+
+- Guava
    
+    - Collection utilities
+    - Preconditions practice
+
 ...to be continued

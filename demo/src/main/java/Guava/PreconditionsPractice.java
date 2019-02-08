@@ -1,12 +1,13 @@
+package Guava;
+
 import com.google.common.base.Preconditions;
-import com.google.common.base.Predicate;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-public class Guava {
+public class PreconditionsPractice {
 
   public static void main(String[] args) {
     System.out.println(Preconditions.checkNotNull(Optional.of(5)));
@@ -17,11 +18,11 @@ public class Guava {
     System.out.println(Preconditions.checkPositionIndex(1, list.size()));
 
     Boolean b = false;
-    Preconditions.checkState(b);
-    //doesn't run
+
+    Preconditions.checkState(b); //throws an exception, the following code doesn't run
+
     Integer i = 3;
     i += 1;
     System.out.println(i);
-
   }
 }
