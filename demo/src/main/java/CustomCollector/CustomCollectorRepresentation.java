@@ -1,16 +1,18 @@
+package CustomCollector;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Optional;
 
 public class CustomCollectorRepresentation {
 
-  static CustomCollector<List<Integer>> customCollector = new CustomCollector<>();
-  static CustomCollector<List<String>> customCollector2 = new CustomCollector<>();
+  private static CustomCollector<List<Integer>> customCollector = new CustomCollector<List<Integer>>();
+  private static CustomCollector<List<String>> customCollector2 = new CustomCollector<List<String>>();
 
   public static void main(String[] args) {
 
     customCollector.setT(Arrays.asList(12, 544, 4, 10));
+    customCollector2.setT(Arrays.asList("a","b","c","R", "Z", "A"));
 
     System.out.println(
             customCollector
@@ -54,6 +56,20 @@ public class CustomCollectorRepresentation {
                     .stream()
                     .min(Comparator.naturalOrder())
                     .orElseThrow(RuntimeException::new)
+    );
+    System.out.println(
+            customCollector2
+            .getT()
+            .stream()
+            .max(Comparator.naturalOrder())
+            .orElseThrow(RuntimeException::new)
+    );
+    System.out.println(
+            customCollector2
+            .getT()
+            .stream()
+            .max(Comparator.comparing(i->i))
+            .orElse("")
     );
   }
 }

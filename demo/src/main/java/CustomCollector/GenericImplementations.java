@@ -1,9 +1,15 @@
+package CustomCollector;
+
+import CustomCollector.CustomCollector;
+import com.example.*;
+import com.example.demo.Kingdom;
+
 import java.util.*;
 
 public class GenericImplementations {
 
   public static void main(String[] args) {
-    CustomCollector<Integer> customCollector = new CustomCollector<>();
+    CustomCollector<Integer> customCollector = new CustomCollector<Integer>();
     customCollector.setT(3);
     System.out.println(customCollector.getT());
 
@@ -14,12 +20,12 @@ public class GenericImplementations {
     System.out.println(customCollector2.getT());
     //raw type
 
-    CustomCollector<String> customCollector3 = new CustomCollector<>();
+    CustomCollector<String> customCollector3 = new CustomCollector<String>();
     customCollector3.setT("This is a custom string");
     System.out.println(customCollector3.getT());
     //raw type
 
-    CustomCollector<Map<Integer, Kingdom>> customCollector4 = new CustomCollector<>();
+    CustomCollector<Map<Integer, Kingdom>> customCollector4 = new CustomCollector<Map<Integer,Kingdom>>();
     Map<Integer, Kingdom> hashMap = new HashMap<>();
     hashMap.put(1, new Kingdom(1, "x", 3));
     hashMap.put(2, new Kingdom(2, "y", 4));
@@ -27,7 +33,7 @@ public class GenericImplementations {
     System.out.println(customCollector4.getT().getClass());
     System.out.println(customCollector4.getT());
 
-    CustomCollector<Map<Integer, List<Kingdom>>> customCollector5 = new CustomCollector<>();
+    CustomCollector<Map<Integer, List<Kingdom>>> customCollector5 = new CustomCollector<Map<Integer, List<Kingdom>>>();
     Map<Integer, List<Kingdom>> hashMap2 = new HashMap<>();
     Kingdom kingdom1 = new Kingdom(3, "x", 15);
     Kingdom kingdom2 = new Kingdom(4, "Álmos vagyok", 100);
