@@ -1,8 +1,10 @@
-import com.sun.istack.internal.NotNull;
+import lombok.Getter;
+import lombok.Setter;
 
-import java.util.Optional;
 import java.util.function.Consumer;
 
+@Getter
+@Setter
 public class Kingdom {
   
   private Integer id;

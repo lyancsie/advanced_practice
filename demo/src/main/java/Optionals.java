@@ -1,6 +1,7 @@
 import javax.swing.text.html.Option;
 import java.util.*;
 import java.util.function.Consumer;
+import java.util.function.Supplier;
 
 public class Optionals {
 
@@ -22,6 +23,8 @@ public class Optionals {
     //String throwException = Optional.ofNullable(emptyKingdom.getName()).orElseThrow(() -> new Exception("Error")); --> can't be rewritten to method ref
     //String throwExceptionMethodRef = Optional.ofNullable(emptyKingdom.getName()).orElseThrow(Exception::new); --> same as the next one
     //String throwException2 = Optional.ofNullable(emptyKingdom.getName()).orElseThrow(() -> new Exception()); --> can be rewritten to method ref
+
+    //Supplier<Integer> getInt = new Supplier<Integer>()
 
   }
 }

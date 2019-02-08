@@ -1,14 +1,11 @@
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class CustomCollector<T> {
 
   private T t;
-
-  public T getT() {
-    return t;
-  }
-
-  public void setT(T t) {
-    this.t = t;
-  }
 }
 
 
