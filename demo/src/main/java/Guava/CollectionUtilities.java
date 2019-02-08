@@ -33,10 +33,6 @@ public class CollectionUtilities {
     ImmutableList<Integer> immutableList = ImmutableList.of(1, 2, 3, 4, 6);
     System.out.println(immutableList.subList(0, 5));
     //immutableList.asList().add(1); --> throws UnsupportedOperationException
-
-    //can't add elements after
-    List<Integer> list = new ArrayList<>(Arrays.asList(1, 4, 5, 6, 10));
-    list.add(11);
     //ImmutableList list2 = ImmutableList.toImmutableList(list); marked as unstable
 
 

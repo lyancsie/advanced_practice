@@ -19,16 +19,16 @@ public class GenericImplementations {
     System.out.println(customCollector3.getT());
     //raw type
 
-    CustomCollector<HashMap<Integer, Kingdom>> customCollector4 = new CustomCollector<>();
-    HashMap<Integer, Kingdom> hashMap = new HashMap<>();
+    CustomCollector<Map<Integer, Kingdom>> customCollector4 = new CustomCollector<>();
+    Map<Integer, Kingdom> hashMap = new HashMap<>();
     hashMap.put(1, new Kingdom(1, "x", 3));
     hashMap.put(2, new Kingdom(2, "y", 4));
     customCollector4.setT(hashMap);
     System.out.println(customCollector4.getT().getClass());
     System.out.println(customCollector4.getT());
 
-    CustomCollector<HashMap<Integer, List<Kingdom>>> customCollector5 = new CustomCollector<>();
-    HashMap<Integer, List<Kingdom>> hashMap2 = new HashMap<>();
+    CustomCollector<Map<Integer, List<Kingdom>>> customCollector5 = new CustomCollector<>();
+    Map<Integer, List<Kingdom>> hashMap2 = new HashMap<>();
     Kingdom kingdom1 = new Kingdom(3, "x", 15);
     Kingdom kingdom2 = new Kingdom(4, "Álmos vagyok", 100);
     hashMap2.put(1, Arrays.asList(kingdom1, kingdom2));

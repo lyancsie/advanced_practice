@@ -33,6 +33,11 @@ public class FunctionalInterfaces {
     Optional<Integer> x = Optional.of(100);
     x.ifPresent((Consumer<? super Integer>) consumer.andThen(System.out::println));
 
+    Consumer<? super Integer> consumer2 = c -> System.out.println(c); // OR System.out::println
+
+    Optional<Integer> x2 = Optional.of(100);
+    x2.ifPresent((Consumer<? super Integer>) consumer.andThen(System.out::println));
+
     //writes it twice
     if (x.isPresent()) {
       consumer.andThen(System.out::println);
