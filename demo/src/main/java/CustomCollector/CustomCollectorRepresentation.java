@@ -2,10 +2,7 @@ package CustomCollector;
 
 import lombok.SneakyThrows;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class CustomCollectorRepresentation {
 
@@ -16,6 +13,12 @@ public class CustomCollectorRepresentation {
 
   public static void main(String[] args) {
 
+    ArrayList<String> customStuff = new ArrayList<>();
+
+    if (customStuff instanceof ArrayList) {
+      System.out.println(7);
+    }
+
     customCollector.setT(Arrays.asList(12, 544, 4, 10));
     customCollector2.setT(Arrays.asList("a", "b", "c", "R", "Z", "A"));
 
@@ -23,7 +26,7 @@ public class CustomCollectorRepresentation {
             customCollector
                     .getT()
                     .stream()
-                    .reduce(0, (a1, a2) -> a1 > a2 ? a1 : a2) //if I don't set identity, I can make it optional!
+                    .reduce((a1, a2) -> a1 > a2 ? a1 : a2) //if I don't set identity, I can make it optional!
     );
 
     System.out.println(
@@ -38,6 +41,7 @@ public class CustomCollectorRepresentation {
                     .getT()
                     .stream()
                     .reduce(Math::max)
+
     );
 
     System.out.println(
@@ -84,6 +88,15 @@ public class CustomCollectorRepresentation {
                     .stream()
                     .max(Comparator.comparing(i -> i))
                     .orElse("")
+    );
+
+    String basicValue = "abc";
+
+    System.out.println(
+            customCollector2.getT()
+                    .stream()
+                    .reduce((a1, a2) -> (a1 + a2))
+                    .orElse(basicValue)
     );
   }
 }

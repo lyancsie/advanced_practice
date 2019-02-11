@@ -1,4 +1,3 @@
-import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 import java.util.function.*;
@@ -8,6 +7,8 @@ public class FunctionalInterfaces {
   public static void main(String[] args) {
 
     Supplier<Integer> getInt = () -> 10;
+
+    Optional<String> x = Optional.of("blabl") ;
 
     Random random = new Random();
     Integer n = random.nextInt(2) + 1;
@@ -28,11 +29,10 @@ public class FunctionalInterfaces {
 
     Consumer<?> consumer = c -> System.out.println(c); // OR System.out::println
 
-    Optional<Integer> x = Optional.of(100);
-    x.ifPresent((Consumer<? super Integer>) consumer.andThen(System.out::println));
+    //Optional<Integer> x = Optional.of(100);
+    //x.ifPresent((Consumer<? super Integer>) consumer.andThen(System.out::println));
 
     Consumer<? super Integer> consumer2 = c -> System.out.println(c); // OR System.out::println
-
 
     Optional<Integer> x2 = Optional.of(100);
     x2.ifPresent((Consumer<? super Integer>) consumer.andThen(System.out::println));
@@ -42,8 +42,17 @@ public class FunctionalInterfaces {
       consumer.andThen(System.out::println);
     }
 
-    System.out.println(x.filter(i -> i > 3));
+    x.ifPresent((a) -> System.out.println(a));
+    //x.ifPresent(consumer2);
+
+    //System.out.println(x.filter(i -> i > 3));
 
     Predicate<?> isValid = c -> (c != null) && (c.equals(5) || c.equals(5L) || c.equals(Integer.toString(5)));
+
+    UnaryOperator<Integer> unaryOperator = c -> 2 * c;
+    UnaryOperator<Integer> unaryOperator1 = c -> 3 * c;
+
+    System.out.println(unaryOperator.compose(unaryOperator1).apply(10));
+
   }
 }

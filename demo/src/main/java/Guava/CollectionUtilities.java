@@ -29,7 +29,7 @@ public class CollectionUtilities {
     //breaks, because it's not a Singleton
 
     ImmutableList<Integer> immutableList = ImmutableList.of(1, 2, 3, 4, 6);
-    System.out.println(immutableList.subList(0, 5));
+    System.out.println(immutableList.subList(0, 3));
     //immutableList.asList().add(1); --> throws UnsupportedOperationException
     //ImmutableList list2 = ImmutableList.toImmutableList(list); marked as unstable
 
