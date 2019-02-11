@@ -25,6 +25,7 @@ public class CustomCollectorRepresentation {
                     .stream()
                     .reduce(0, (a1, a2) -> a1 > a2 ? a1 : a2) //if I don't set identity, I can make it optional!
     );
+
     System.out.println(
             customCollector.getT()
                     .stream()
@@ -68,6 +69,7 @@ public class CustomCollectorRepresentation {
                     .min(Comparator.naturalOrder())
                     .orElseThrow(RuntimeException::new)
     );
+
     System.out.println(
             customCollector2
                     .getT()
@@ -75,6 +77,7 @@ public class CustomCollectorRepresentation {
                     .max(Comparator.naturalOrder())
                     .orElseThrow(RuntimeException::new)
     );
+
     System.out.println(
             customCollector2
                     .getT()

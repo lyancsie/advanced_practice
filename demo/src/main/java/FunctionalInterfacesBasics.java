@@ -1,6 +1,3 @@
-import org.omg.CORBA.INTERNAL;
-
-import javax.persistence.criteria.CriteriaBuilder;
 import java.util.List;
 import java.util.function.*;
 
@@ -73,6 +70,5 @@ public class FunctionalInterfacesBasics {
     System.out.println(biggerThan100.apply(26, 5));
 
     MyCustomInterface<Integer, Integer, Integer, Integer> somethingOriginal = (a, b, c) -> (a * b * c);
-
   }
 }
