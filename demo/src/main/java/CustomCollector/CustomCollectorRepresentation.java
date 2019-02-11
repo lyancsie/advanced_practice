@@ -1,5 +1,7 @@
 package CustomCollector;
 
+import lombok.SneakyThrows;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -22,6 +24,12 @@ public class CustomCollectorRepresentation {
                     .getT()
                     .stream()
                     .reduce(0, (a1, a2) -> a1 > a2 ? a1 : a2) //if I don't set identity, I can make it optional!
+    );
+    System.out.println(
+            customCollector.getT()
+                    .stream()
+                    .reduce((a1, a2) -> a1 < a2 ? a1 : a2)
+                    .orElseThrow(RuntimeException::new) //or a1 > a2 ? a2 : a1 );
     );
 
     System.out.println(

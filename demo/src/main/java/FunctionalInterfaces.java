@@ -1,14 +1,12 @@
+import java.util.List;
 import java.util.Optional;
 import java.util.Random;
-import java.util.function.Consumer;
-import java.util.function.Predicate;
-import java.util.function.Supplier;
+import java.util.function.*;
 
 public class FunctionalInterfaces {
 
   public static void main(String[] args) {
 
-    //Supplier<Integer> getInt = new Supplier<Integer>()
     Supplier<Integer> getInt = () -> 10;
 
     Random random = new Random();
@@ -34,6 +32,7 @@ public class FunctionalInterfaces {
     x.ifPresent((Consumer<? super Integer>) consumer.andThen(System.out::println));
 
     Consumer<? super Integer> consumer2 = c -> System.out.println(c); // OR System.out::println
+
 
     Optional<Integer> x2 = Optional.of(100);
     x2.ifPresent((Consumer<? super Integer>) consumer.andThen(System.out::println));
