@@ -1,4 +1,3 @@
-import javax.persistence.criteria.CriteriaBuilder;
 import java.util.List;
 import java.util.function.*;
 
@@ -15,7 +14,6 @@ public class FunctionalInterfacesBasics {
     };
 
     Consumer<String> consumer64644 = (a) -> System.out.println(a);
-
 
     Supplier<Integer> supplier1 = () -> 600;
 
@@ -79,26 +77,22 @@ public class FunctionalInterfacesBasics {
 
       @Override
       public Boolean apply(Integer integer, Integer integer2) {
-        return integer+integer2 > 120;
+        return integer + integer2 > 120;
       }
     };
-
 
     MyCustomInterface<Integer, Integer, Integer, Integer> fsgsgsgt = new MyCustomInterface<Integer, Integer, Integer, Integer>() {
 
       @Override
       public Integer doSomething(Integer integer, Integer integer2, Integer integer3) {
-        return integer+integer2+integer3;
+        return integer + integer2 + integer3;
       }
     };
 
-    fsgsgsgt.doSomething(20,20,20);
-
-
+    fsgsgsgt.doSomething(20, 20, 20);
     MyCustomInterface<Integer, Integer, Integer, Integer> somethingOriginal = (a, b, c) -> (a * b * c);
 
-
-   Thread thread = new Thread(()-> System.out.println("This is a new thread"));
-   thread.start();
+    Thread thread = new Thread(() -> System.out.println("This is a new thread"));
+    thread.start();
   }
 }
