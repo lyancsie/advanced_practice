@@ -13,6 +13,8 @@ public class MultipleThreads implements Runnable {
 
   @Override
   public void run() {
+
+    thread1.run();
     for (int i = 0; i < myCustomList.size(); i++) {
       try {
         System.out.println(myCustomList.get(i));
@@ -27,6 +29,7 @@ public class MultipleThreads implements Runnable {
     if (thread1 == null) {
       thread1 = new Thread(this);
       thread1.start();
+
     }
   }
 }

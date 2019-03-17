@@ -1,9 +1,19 @@
+import org.omg.PortableServer.THREAD_POLICY_ID;
+
 import java.util.List;
 import java.util.function.*;
 
 public class FunctionalInterfacesBasics {
 
   public static void main(String[] args) {
+
+    final String[] xy = new String[2];
+
+    xy[0] = "abc";
+    System.out.println(xy[0]);
+    xy[0] = "def";
+    System.out.println(xy[0]);
+
 
     Supplier<Integer> supplier = new Supplier<Integer>() {
 
@@ -13,7 +23,8 @@ public class FunctionalInterfacesBasics {
       }
     };
 
-    Consumer<String> consumer64644 = (a) -> System.out.println(a);
+    Consumer<String> consumer64644 = System.out::println;
+
 
     Supplier<Integer> supplier1 = () -> 600;
 
@@ -91,6 +102,7 @@ public class FunctionalInterfacesBasics {
 
     fsgsgsgt.doSomething(20, 20, 20);
     MyCustomInterface<Integer, Integer, Integer, Integer> somethingOriginal = (a, b, c) -> (a * b * c);
+
 
     Thread thread = new Thread(() -> System.out.println("This is a new thread"));
     thread.start();

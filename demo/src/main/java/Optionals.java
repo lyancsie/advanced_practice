@@ -1,4 +1,5 @@
 import com.example.demo.Kingdom;
+import org.apache.logging.log4j.util.PropertySource;
 
 import java.util.*;
 
@@ -14,6 +15,15 @@ public class Optionals {
     System.out.println(kingdomId + " " + kingdomName);
 
     Integer realKingdomId = Optional.ofNullable(someKingdom.getId()).orElse(0);
+    Optional.of(realKingdomId).ifPresent((a) -> System.out.println("Itt vagyok" + a));
+   if(Optional.of(realKingdomId).isPresent()){
+     System.out.println("It is present");
+   }
+    Optional.of(realKingdomId).orElseGet(()->220);
+
+
+
+
     String realKingdomNameUpperCase = Optional.ofNullable(someKingdom.getName()).orElse("anonymous").toUpperCase();
 
     System.out.println(realKingdomId + " " + realKingdomNameUpperCase);

@@ -43,6 +43,23 @@ public class FunctionalInterfaces {
     }
 
     x.ifPresent((a) -> System.out.println(a));
+Consumer<String> cysgdhd = new Consumer<String>() {
+
+  @Override
+  public void accept(String s) {
+    System.out.println(s);
+  }
+};
+cysgdhd.accept("hello");
+
+    Consumer xyzab = (a)->System.out.println(a);
+//Supplier
+    //Predicate
+    //Function
+    // BiFunction
+
+
+    x.ifPresent(System.out::print);
     //x.ifPresent(consumer2);
 
     //System.out.println(x.filter(i -> i > 3));
