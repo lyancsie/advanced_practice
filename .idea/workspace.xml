@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad2df732-891a-421a-a036-7cb1b528936a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/demo/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/CustomCollector/CustomCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/customcollector/CustomCollector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/CustomCollector/CustomCollectorRepresentation.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/customcollector/CustomCollectorRepresentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/CustomCollector/GenericImplementations.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/customcollector/GenericImplementations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/GenericClass/AddBoolean.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/generic/AddBoolean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/GenericClass/AddDouble.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/generic/AddDouble.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/GenericClass/AddInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/generic/AddInt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/GenericClass/AddString.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/generic/AddString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/GenericClass/Addable.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/generic/Addable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/GenericClass/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/generic/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/Guava/CollectionUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/guava/CollectionUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/Guava/GuavaGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/guava/GuavaGeneric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/Guava/GuavaGenericImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/guava/GuavaGenericImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/Guava/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/guava/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/Guava/PreconditionsPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/guava/PreconditionsPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/Optionals.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/Optionals.java" afterDir="false" />
-    </list>
+    <list default="true" id="ad2df732-891a-421a-a036-7cb1b528936a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/demo/.gradle/" />
     <ignored path="$PROJECT_DIR$/demo/build/" />
@@ -309,8 +290,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/demo/src/main/java/reflectionapi/ReflectionClass.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="65" column="21" lean-forward="true" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+                <state relative-caret-position="136">
+                  <caret line="60" column="39" lean-forward="true" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -899,7 +880,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557408516952" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557409597495" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/demo/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -1067,12 +1048,12 @@
       <workItem from="1552829087178" duration="18933000" />
       <workItem from="1552993754722" duration="1205000" />
       <workItem from="1553042315762" duration="1461000" />
-      <workItem from="1557403352020" duration="5216000" />
+      <workItem from="1557403352020" duration="6031000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153558000" />
+    <option name="totallyTimeSpent" value="154373000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1519,8 +1500,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/src/main/java/guava/CollectionUtilities.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+        <state relative-caret-position="328">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1553,8 +1534,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="252">
+          <caret line="32" column="56" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -1582,20 +1563,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/src/main/java/reflectionapi/ReflectionClass.java">
+    <entry file="file://$PROJECT_DIR$/demo/src/main/java/reflectionapi/RandomInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="65" column="21" lean-forward="true" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/src/main/java/reflectionapi/RandomInterface.java">
+    <entry file="file://$PROJECT_DIR$/demo/src/main/java/reflectionapi/ReflectionClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="60" column="39" lean-forward="true" selection-start-line="60" selection-start-column="39" selection-end-line="60" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

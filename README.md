@@ -27,4 +27,8 @@
     - Preconditions practice
     - Sets: union(), intersection(), symmetricDifference()
 
+- Reflection API
+
+    - Copying an interface without using the toString(); methods; making the copied code compilable. 
+
 ...to be continued
