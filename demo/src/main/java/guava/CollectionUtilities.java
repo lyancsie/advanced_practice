@@ -1,4 +1,4 @@
-package Guava;
+package guava;
 
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Iterables;
@@ -38,6 +38,7 @@ public class CollectionUtilities {
     result.forEach(System.out::println);
     //TODO: System.out.println(concat.iterator()); --> what is an Iterable exactly
     Iterator<Integer> i = concat.iterator();
+
     while (i.hasNext()) {
       System.out.print(i.next() + " ");
     }
@@ -77,6 +78,6 @@ public class CollectionUtilities {
 
     System.out.println(Maps.difference(map1, map2));
 
-    
+
   }
 }

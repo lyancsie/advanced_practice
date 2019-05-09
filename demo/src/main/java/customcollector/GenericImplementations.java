@@ -1,4 +1,4 @@
-package CustomCollector;
+package customcollector;
 
 import com.example.demo.Building;
 import com.example.demo.Kingdom;

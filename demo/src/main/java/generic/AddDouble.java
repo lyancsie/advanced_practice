@@ -1,4 +1,4 @@
-package GenericClass;
+package generic;
 
 public class AddDouble implements Addable<Double> {
 

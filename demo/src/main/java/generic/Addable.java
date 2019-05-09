@@ -1,4 +1,4 @@
-package GenericClass;
+package generic;
 
 public interface Addable<T> {
 

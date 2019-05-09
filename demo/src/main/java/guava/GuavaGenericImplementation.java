@@ -1,4 +1,4 @@
-package Guava;
+package guava;
 
 import com.google.common.collect.Sets;
 import java.util.Set;
@@ -24,4 +24,5 @@ public class GuavaGenericImplementation extends GuavaGeneric<Set<Integer>, Integ
   Set<Integer> symmetricDifference(Set<Integer> t1, Set<Integer> t2) {
     return Sets.symmetricDifference(t1, t2);
   }
+
 }

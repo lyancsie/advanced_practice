@@ -1,4 +1,4 @@
-package GenericClass;
+package generic;
 
 public class AddString implements Addable<String> {
 

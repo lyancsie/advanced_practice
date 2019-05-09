@@ -1,4 +1,4 @@
-package GenericClass;
+package generic;
 
 public class AddBoolean implements Addable<Boolean> {
 

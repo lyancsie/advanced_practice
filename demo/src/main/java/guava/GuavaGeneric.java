@@ -1,4 +1,4 @@
-package Guava;
+package guava;
 
 import java.util.Collection;
 

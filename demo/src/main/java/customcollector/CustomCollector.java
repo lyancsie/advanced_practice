@@ -1,4 +1,4 @@
-package CustomCollector;
+package customcollector;
 
 import lombok.Getter;
 import lombok.Setter;
